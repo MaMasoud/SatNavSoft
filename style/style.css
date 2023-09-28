@@ -56,6 +56,28 @@ header nav a{
     font-style: normal;
     font-weight: 500;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+}
+header nav a:hover{
+    background: rgba(1, 0, 36, 0.798);
+    transform: scale(1.02);
+    box-shadow: 0px 0px 25px 0px rgba(152, 167, 255, 0.763);
+}
+header nav a .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav a h3{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
 }
 .content{
     display: flex;
