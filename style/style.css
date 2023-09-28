@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.overlay {
+    background: rgba(2, 11, 33, 0.60);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.page-cont{
+    z-index: 1000;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+header{
+    width: 100%;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+header nav h1{
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-transform: capitalize;
+}
+header nav a{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.content h1{
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 83.2px */
+    text-transform: uppercase;
+    text-shadow: 0px 0px 25px #758BFF60;
+}
+.content a{
+    text-decoration: none;
+}
+.content .button .box{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin-top: 30px;
+    gap: 15px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: rgba(1, 0, 36, 0.33);
+    box-shadow: 0px 0px 25px 0px rgba(95, 120, 255, 0.66);
+    transition: all 0.3s ease-in-out;
+}
+.content .button .box:hover{
+    background: rgba(1, 0, 36, 0.798);
+    transform: scale(1.02);
+    box-shadow: 0px 0px 25px 0px rgba(152, 167, 255, 0.763);
+}
+.content .button .box .icon{
+    width: 32px;
+    height: 32px;
+}
+.content .button .box .text{
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+.content .button .box .text h2{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+.content .button .box .text h3{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+}
+.download{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+}
+.download .linux .box{
+    display: flex;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #000;
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+    height: 50px;
+}
+.download .linux .box:hover{
+    background: #000;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 25px 0px rgba(152, 167, 255, 0.763);
+}
+.download .linux .box .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download .linux .box h2{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFF;
+}
+.download .windows .box{
+    display: flex;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+    height: 50px;
+}
+.download .windows .box:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 25px 0px rgba(152, 167, 255, 0.763);
+}
+.download .windows .box .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download .windows .box h2{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFF;
+}
